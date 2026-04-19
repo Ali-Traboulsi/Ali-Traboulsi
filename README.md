@@ -100,6 +100,15 @@ This profile is:
 
 ---
 
+## 📊 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ali-Traboulsi&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ali-Traboulsi&layout=compact&theme=tokyonight" />
+</p>
+
+---
+
 ## 📫 Reach Out
 
 If you're building something serious or need someone who:
