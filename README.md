@@ -1,119 +1,122 @@
-## 🧩 Case Study — Income & Expenses Tracking System
+# ⌁ Ali Traboulsi — Building Systems That Actually Work
 
----
-
-### ⌁ The Problem
-
-Most people don’t actually *understand* their financial behavior.
-
-Existing apps either:
-
-* overcomplicate the experience
-* or oversimplify the data
-
-The result?
-Users stop using them.
-
----
-
-### ⌁ The Goal
-
-Design a system that:
-
-* makes financial tracking **effortless**
-* keeps data **structured and meaningful**
-* provides **clear insights**, not just storage
-
----
-
-### ⌁ The Approach
-
-Instead of jumping into CRUD, I focused on **data flow and structure first**.
-
-**Core principles:**
-
-* Every transaction has context (category, type, timestamp)
-* Data should be easy to query and extend
-* Logic should be separated, not scattered
-
----
-
-### ⌁ System Design
-
-**Architecture style:**
-
-* Layered architecture (Controller → Service → Repository)
-
-**Key decisions:**
-
-* Business logic isolated in services
-* DTOs used to control data exposure
-* Clear separation between read/write operations
-
-```csharp id="7y45yz"
-// Example: controlled processing instead of raw CRUD
-public async Task<Result> AddTransaction(TransactionDto dto)
-{
-    var entity = _mapper.Map<Transaction>(dto);
-
-    entity.Normalize(); // enforce consistency
-
-    await _repository.AddAsync(entity);
-
-    return Result.Success();
-}
+```diff
++ Not just writing code.
++ Designing behavior.
++ Engineering reliability.
 ```
 
 ---
 
-### ⌁ Challenges & Trade-offs
+## 🧠 The Engineer Behind the Code
 
-**1. Data consistency vs flexibility**
+Most developers focus on features.
 
-* Ensured strict structure (categories, types)
-* While allowing future extensibility
+I focus on:
 
-**2. Simplicity vs scalability**
+* Why the system exists
+* How it behaves under pressure
+* What happens when things break
 
-* Avoided overengineering early
-* But designed in a way that supports growth
-
-**3. Clean architecture vs speed**
-
-* Took longer initially
-* Paid off in maintainability
+I build backend systems with **clarity, structure, and purpose** — not just endpoints.
 
 ---
 
-### ⌁ What Makes This Different
+## ⚙️ Current State
 
-This is not just a CRUD app.
-
-It’s:
-
-* A **structured financial model**
-* A system designed for **predictability**
-* A foundation that can evolve into:
-
-  * analytics engine
-  * budgeting assistant
-  * financial insights platform
+```yaml
+role: .NET Developer
+focus: Backend Engineering
+interests:
+  - System Design
+  - API Architecture
+  - Performance & Scalability
+  - Clean Code Practices
+```
 
 ---
 
-### ⌁ What I’d Improve Next
+## 🧩 Selected Work
 
-If I take this further:
+### ⌁ Income & Expenses Tracking System
 
-* Add **analytics layer** (monthly trends, behavior insights)
-* Introduce **caching for performance**
-* Apply **CQRS pattern** for scalability
-* Add **authentication & multi-user support**
-* Deploy with **CI/CD pipeline**
+A system built to solve a real-world problem:
+**understanding and controlling financial behavior.**
+
+**What’s inside:**
+
+* Secure authentication flow
+* Structured financial data modeling
+* CRUD operations with clean separation of concerns
+* Reporting logic for insights
+
+```csharp
+// Not just CRUD — controlled data flow
+public class TransactionService
+{
+    public async Task<Result> Process(TransactionDto dto)
+    {
+        // Validation → Mapping → Persistence → Feedback
+    }
+}
+```
+
+👉 The focus wasn’t “make it work”
+👉 The focus was “make it structured, extendable, and predictable”
 
 ---
 
-### ⌁ Key Takeaway
+## 🧬 Engineering Philosophy
 
-> Good systems are not built around endpoints.
-> They are built around **how data flows and evolves**.
+> “If the system is hard to reason about, it’s already broken.”
+
+I aim for:
+
+* **Readable over clever**
+* **Explicit over magical**
+* **Stable over rushed**
+
+---
+
+## 🚀 What I’m Moving Toward
+
+Right now, I’m pushing deeper into:
+
+* Designing **scalable backend systems**
+* Writing **production-grade APIs**
+* Understanding **system behavior at scale**
+
+---
+
+## 📡 Signal vs Noise
+
+Most repos are noise.
+
+This profile is:
+
+* Fewer projects
+* More intention
+* Real engineering thinking
+
+---
+
+## 📫 Reach Out
+
+If you're building something serious or need someone who:
+
+* thinks before coding
+* structures before scaling
+
+Let’s talk.
+
+```
+LinkedIn → https://www.linkedin.com/in/ali-traboulsi
+```
+
+---
+
+## ⌁ Final Note
+
+This is not a portfolio.
+
+It’s a **trajectory**.
